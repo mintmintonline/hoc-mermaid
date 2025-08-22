@@ -1,5 +1,9 @@
 ```mermaid
-graph TD
- A[Bắt đầu] --> B[GitHub tự động hỗ trợ]
- B --> C[Không cần cài đặt]
- C --> D[Xem ngay kết quả]
+stateDiagram-v2
+ [*] --> Chờ
+ Chờ --> Xử_lý : Bắt đầu
+ Xử_lý --> Hoàn_thành : Thành công
+ Xử_lý --> Lỗi : Thất bại
+ Hoàn_thành --> [*]
+ Lỗi --> Chờ : Thử lại
+ Lỗi --> [*] : Hủy
