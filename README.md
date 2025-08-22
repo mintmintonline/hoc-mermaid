@@ -6,4 +6,4 @@ stateDiagram-v2
  Xử_lý --> Lỗi : Thất bại
  Hoàn_thành --> [*]
  Lỗi --> Chờ : Thử lại
- Lỗi --> [*] : Hủy
+ Lỗi --> [*] : (https://www.facebook.com/photo?fbid=122192520476048970&set=a.122094791546048970)
